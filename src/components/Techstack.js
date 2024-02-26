@@ -7,13 +7,14 @@ import { motion } from 'framer-motion';
 
 const Techstack = () => {
     return (
-        <Container fluid>
+        <Container>
             <Row>
                 <Col className='mt-3 p-5  text-light '>
                     <h2 className='display-2' style={{ fontWeight: 600 }}>
                         {' '}
                         TechStack
                     </h2>
+                    <Container className='mt-5'>
                     <p className='pt-4'>
                         I am currently most famliar with <strong>HTML, CSS, Bootstrap,
                         JavaScript, React </strong> and <strong>React Native</strong>. <br />
@@ -22,6 +23,7 @@ const Techstack = () => {
                         actively seeking opportunities to learn and grow each
                         day.
                     </p>
+                    </Container>
                 </Col>
             </Row>
             <Row xs={3} md={3} lg={6} className='d-flex justify-content-center g-2' style={{}}>

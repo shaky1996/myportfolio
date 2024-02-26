@@ -2,45 +2,50 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Icon from '@reacticons/bootstrap-icons';
 
 const About = () => {
     return (
-        <Container  style={{ marginTop: '10%', paddingBottom: '150px', width: '100%'}}>
-            <Row className='mt-3 px-5  text-light text-start'>
-                <h3>
-                    <small
-                        className='text-body-success'
-                        style={{ fontWeight: 300 }}
-                    >
-                        Hello,
-                    </small>
-                </h3>
-                <h1 className='display-2'>
-                    I'm{' '}
-                    <span style={{ fontWeight: 600, color: 'yellow' }}>
-                        Shakhzod
-                    </span>
-                </h1>
-                <h2
-                    className='pt-3 text-break fs-4'
-                    style={{ fontWeight: 300 }}
-                >
-                    {' '}
-                    I build websites and apps
-                </h2>
-                <Col>
-                    <Button variant='outline-info' className='mt-3'>
-                        {' '}
-                        <Icon
-                            name='file-earmark-person-fill'
-                            style={{ paddingRight: 5 }}
-                        />
-                        My Resume
-                    </Button>{' '}
+        <Container  style={{ marginTop: '10%', marginBottom: '200px' }} className='text-light '>
+            <Row>
+                <Col className='text-light '>
+                    <h2 className='display-2' style={{ fontWeight: 600 }}>
+                        About Me
+                    </h2>
                 </Col>
             </Row>
+            <Container className='mt-5'>
+            <Row>
+                <Col>
+                    <h2 className='text-start'>My Story</h2>
+                    <p className='text-start mt-5' style={{  fontSize:'1.2rem' ,fontWeight: 400}}>
+                        Hello there once again!<br /><br />
+                        
+                        I'm Shakhzod (but you can call me Shak), a web and mobile developer
+                        residing in the scenic suburban area of Philadelphia,
+                        PA. Originally from Uzbekistan, my journey has taken me
+                        across the globe, spending two enriching years in Latvia
+                        before settling in the United States six years ago.<br /><br />
+
+                        With proficiency in English, Russian, and Uzbek, this linguistic diversity
+                        not only helps me connect with people from different
+                        backgrounds but also contributes to my adaptability – a
+                        quality I bring to my coding endeavors. <br /><br />
+                        
+                        I recently
+                        completed the Nucamp coding bootcamp, earning my stripes
+                        with a certification in Full Stack Web and Mobile
+                        Development. Coding isn't just a job for me; it's a
+                        passion. I find joy in creating seamless interfaces and
+                        tackling complex challenges. The tech world is
+                        constantly evolving, and I'm always eager to learn and
+                        embrace new things.<br /><br />
+
+                        Welcome to my digital space, where my global experiences meet my coding expertise, and where every project is a new chapter in this ever-evolving adventure.
+                    </p>
+                </Col>
+             
+            </Row>
+            </Container>
         </Container>
     );
 };

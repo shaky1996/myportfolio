@@ -19,66 +19,29 @@ const ProjectsCard = () => {
                         <Row>
                             <Col sm={4}>
                                 <ListGroup data-bs-theme='light'>
-                                    <ListGroup.Item
-                                        action
-                                        href='#link1'
-                                        className=' border-0 rounded-3 mb-2 list-group-item-secondary'
-                                        style={{
-                                            background: 'transparent',
-                                            fontSize: '1.5rem',
-                                            fontWeight: 500
-                                        }}
-                                        onMouseOver={(e) =>
-                                            (e.target.style.backgroundColor =
-                                                '#292b2c')
-                                        }
-                                        onMouseOut={(e) =>
-                                            (e.target.style.backgroundColor =
-                                                'transparent')
-                                        }
-                                    >
-                                        Link 1
-                                    </ListGroup.Item>
-                                    <ListGroup.Item
-                                        action
-                                        href='#link2'
-                                        className='border-0 rounded-3 mb-2 list-group-item-secondary'
-                                        style={{
-                                            background: 'transparent',
-                                            fontSize: '1.5rem',
-                                            fontWeight: 500
-                                        }}
-                                        onMouseOver={(e) =>
-                                            (e.target.style.backgroundColor =
-                                                '#292b2c')
-                                        }
-                                        onMouseOut={(e) =>
-                                            (e.target.style.backgroundColor =
-                                                'transparent')
-                                        }
-                                    >
-                                        Link 2
-                                    </ListGroup.Item>
-                                    <ListGroup.Item
-                                        action
-                                        href='#link3'
-                                        className='border-0 rounded-3 mb-2 list-group-item-secondary'
-                                        style={{
-                                            background: 'transparent',
-                                            fontSize: '1.5rem',
-                                            fontWeight: 500
-                                        }}
-                                        onMouseOver={(e) =>
-                                            (e.target.style.backgroundColor =
-                                                '#292b2c')
-                                        }
-                                        onMouseOut={(e) =>
-                                            (e.target.style.backgroundColor =
-                                                'transparent')
-                                        }
-                                    >
-                                        Link 3
-                                    </ListGroup.Item>
+                                    {itemData.map((item, idx) => (
+                                        <ListGroup.Item
+                                            key={idx}
+                                            action
+                                            href={`#link${idx + 1}`}
+                                            className=' border-0 rounded-3 mb-2 list-group-item-secondary'
+                                            style={{
+                                                background: 'transparent',
+                                                fontSize: '1.5rem',
+                                                fontWeight: 500
+                                            }}
+                                            onMouseOver={(e) =>
+                                                (e.target.style.backgroundColor =
+                                                    '#292b2c')
+                                            }
+                                            onMouseOut={(e) =>
+                                                (e.target.style.backgroundColor =
+                                                    'transparent')
+                                            }
+                                        >
+                                            {item.title}
+                                        </ListGroup.Item>
+                                    ))}
                                 </ListGroup>
                             </Col>
                         </Row>
@@ -98,6 +61,11 @@ const ProjectsCard = () => {
                                             <Card.Img
                                                 src={item.img}
                                                 alt='Card image'
+                                                style={{
+                                                    height: '450px',
+                                                    width: 'auto',
+                                                    objectFit: 'cover'
+                                                }}
                                             />
                                             <Card.ImgOverlay
                                                 style={{
@@ -123,9 +91,7 @@ const ProjectsCard = () => {
                                                 >
                                                     {item.description}
                                                 </Card.Text>
-                                                <Card.Text className='text-start'>
-                                                    technologies used:
-                                                </Card.Text>
+                                            
                                                 <Col className='text-start'>
                                                     {item.techStack.map(
                                                         (tech, index) => (
@@ -140,28 +106,28 @@ const ProjectsCard = () => {
                                                     )}
                                                 </Col>
                                                 <Col className='mt-4 text-start'>
-                                                <Button
-                                                href="#"
+                                                    <Button
+                                                        href='#'
                                                         variant='warning'
-                                                       
+                                                        
                                                     >
                                                         <Icon
                                                             name='display'
                                                             style={{
-                                                                paddingRight: 5
+                                                                marginRight: 5
                                                             }}
                                                         />
                                                         Live Demo
                                                     </Button>
                                                     <Button
-                                                    href="#"
+                                                        href='#'
                                                         variant='outline-light'
                                                         className='mx-3'
                                                     >
                                                         <Icon
                                                             name='github'
                                                             style={{
-                                                                paddingRight: 5
+                                                                marginRight: 5
                                                             }}
                                                         />
                                                         Code
@@ -186,16 +152,16 @@ const itemData = [
         title: 'uFit',
         description:
             'React Native fitness app — lets users find instructions for different workouts with an easy-to-use interface. \nUsers can track workouts using built-in templates and track weight loss progress.',
-        techStack: ['React Native', 'React', 'Js'],
+        techStack: ['React Native'],
         demo: 'link1',
         github: 'link2'
     },
     {
         img: require('../assets/projectsImg/lambo.jpg'),
-        title: 'uFit',
+        title: 'Lambo',
         description:
-            'React Native fitness app — lets users find instructions for different workouts with an easy-to-use interface. \nUsers can track workouts using built-in templates and track weight loss progress.',
-        techStack: ['React Native', 'React', 'Js'],
+            'React Native fitness app — lets users find instructions for different workouts with an easy-to-use interface. \nUsers can track workouts using built-in templates and track weight loss progress. Asdasdasdasdasd asdasd asdasd asdasd asd',
+        techStack: ['HTML', 'CSS', 'JavaScript'],
         demo: 'link1',
         github: 'link2'
     }
