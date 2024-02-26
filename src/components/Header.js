@@ -19,10 +19,10 @@ const Header = () => {
         <Navbar.Toggle className='ml-auto'  aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='mx-auto'>
-                <Nav.Link active href='#about'>About</Nav.Link>
-                <Nav.Link href='#skills'>Skills</Nav.Link>
-                <Nav.Link href='#projects'>Projects</Nav.Link>
-                <Nav.Link href='#contact'>Contact</Nav.Link>
+                <Nav.Link  href='#about'>SKILLS</Nav.Link>
+                <Nav.Link href='#skills'>PROJECTS</Nav.Link>
+                <Nav.Link href='#projects'>ABOUT</Nav.Link>
+                
             </Nav>
         </Navbar.Collapse>
         
