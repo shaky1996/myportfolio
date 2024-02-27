@@ -6,6 +6,7 @@ import Intro from './components/Intro';
 import Techstack from './components/Techstack';
 import Projects from './components/Projects';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Techstack />
             <Projects />
             <About />
+            <Footer />
         </Container>
     );
 }

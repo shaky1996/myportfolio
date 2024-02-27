@@ -20,7 +20,7 @@ const About = () => {
                     <p className='text-start mt-5' style={{  fontSize:'1.2rem' ,fontWeight: 400}}>
                         Hello there once again!<br /><br />
                         
-                        I'm Shakhzod (but you can call me Shak), a web and mobile developer
+                        I'm Shakhzod (or you can call me <span style={{  color: 'yellow' }}>Shak </span>), a web and mobile developer
                         residing in the scenic suburban area of Philadelphia,
                         PA. Originally from Uzbekistan, my journey has taken me
                         across the globe, spending two enriching years in Latvia
@@ -33,14 +33,12 @@ const About = () => {
                         
                         I recently
                         completed the Nucamp coding bootcamp, earning my stripes
-                        with a certification in Full Stack Web and Mobile
-                        Development. Coding isn't just a job for me; it's a
+                        with a certification in <span style={{ fontWeight: 700 }}><u>Full Stack Web + Mobile
+                        Development</u></span>. Coding isn't just a job for me; it's a
                         passion. I find joy in creating seamless interfaces and
                         tackling complex challenges. The tech world is
                         constantly evolving, and I'm always eager to learn and
-                        embrace new things.<br /><br />
-
-                        Welcome to my digital space, where my global experiences meet my coding expertise, and where every project is a new chapter in this ever-evolving adventure.
+                        embrace new things.
                     </p>
                 </Col>
              
