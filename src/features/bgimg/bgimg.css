@@ -1,0 +1,19 @@
+section {
+    
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  
+}
+
+.img {
+    
+    height: 350px;
+    width: auto;
+    object-fit:scale-down;
+    
+    
+    
+}

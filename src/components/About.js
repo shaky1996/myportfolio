@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 const About = () => {
     return (
-        <Container  style={{ marginTop: '10%', marginBottom: '200px' }} className='text-light '>
+        <Container  style={{ marginTop: '10%' }} className='text-light '>
             <Row>
                 <Col className='text-light '>
                     <h2 className='display-2' style={{ fontWeight: 600 }}>

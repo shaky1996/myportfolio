@@ -6,7 +6,7 @@ import Icon from '@reacticons/bootstrap-icons';
 
 const Footer = () => {
     return (
-        <Container>
+        <Container style={{ marginTop: '10%' }} >
             <Row className='border-bottom pb-3 mb-3'>
                 <Col style={{ fontSize: '2em'}}>
                     <a

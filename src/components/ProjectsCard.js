@@ -62,7 +62,7 @@ const ProjectsCard = () => {
                                                 src={item.img}
                                                 alt='Card image'
                                                 style={{
-                                                    height: '450px',
+                                                    height: '500px',
                                                     width: 'auto',
                                                     objectFit: 'cover'
                                                 }}
@@ -122,7 +122,7 @@ const ProjectsCard = () => {
                                                     <Button
                                                         href='#'
                                                         variant='outline-light'
-                                                        className='mx-3'
+                                                        className='mx-1'
                                                     >
                                                         <Icon
                                                             name='github'

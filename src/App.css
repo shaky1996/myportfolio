@@ -1,7 +1,9 @@
 .App {
 background-color: black;
   text-align: center;
-
+    margin: 0;
+    padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  overflow: hidden;
 }
 

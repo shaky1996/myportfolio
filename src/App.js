@@ -8,10 +8,12 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Footer from './components/Footer';
 
+
 function App() {
     return (
         <Container fluid className='App'>
             <Header />
+      
             <Intro />
             <Techstack />
             <Projects />
