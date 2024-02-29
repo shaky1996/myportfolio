@@ -11,10 +11,17 @@ section {
     position: absolute; 
     width: 100%;
     top: -80px;
-    
+    transition: transform 0.5s ease;
 }
+/* .blob:hover {
+    transform: scale(1.5) rotate(90deg); 
+    transition: transform 0.5s ease; 
+} */
+
 
 .blob:nth-child(2) {
     
-    filter: blur(500px);
+    filter: blur(15px);
 }
+
+

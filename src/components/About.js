@@ -5,10 +5,10 @@ import Col from 'react-bootstrap/Col';
 
 const About = () => {
     return (
-        <Container  style={{ marginTop: '10%' }} className='text-light '>
+        <Container id='about'  style={{ marginTop: '10%' }} className='text-light '>
             <Row>
                 <Col className='text-light '>
-                    <h2 className='display-2' style={{ fontWeight: 600 }}>
+                    <h2 className='display-2' style={{ fontWeight: 600 }} >
                         About Me
                     </h2>
                 </Col>

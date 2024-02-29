@@ -7,14 +7,16 @@ import Techstack from './components/Techstack';
 import Projects from './components/Projects';
 import About from './components/About';
 import Footer from './components/Footer';
-
+import BackToTopBtn from './features/backToTopBtn/BackToTopBtn';
 
 function App() {
     return (
         <Container fluid className='App'>
+            <div className='app-wrapper'>
             <Header />
-      
             <Intro />
+            </div>
+            <BackToTopBtn />
             <Techstack />
             <Projects />
             <About />

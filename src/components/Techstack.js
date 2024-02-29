@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const Techstack = () => {
     return (
-        <Container>
+        <Container id='techstack'>
             <Row>
                 <Col className='mt-3 p-5  text-light '>
                     <h2 className='display-2' style={{ fontWeight: 600 }}>

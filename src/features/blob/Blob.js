@@ -1,6 +1,6 @@
 import React from 'react';
 import './blob.css';
-import CoderMan from '../../assets/background/CoderMan.png'
+
 
 const Blob = () => {
     return (
@@ -36,7 +36,7 @@ const Blob = () => {
       </div>
 
       <div className='blob'>
-           <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="120%" id="blobSvg">
+           <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" width="120%" id="blobSvg">
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" style={{stopColor: 'rgb(255, 95, 109)'}}></stop>

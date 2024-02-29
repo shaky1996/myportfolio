@@ -1,9 +1,28 @@
 .App {
-background-color: black;
-  text-align: center;
+    background: linear-gradient(to bottom, #000000 50%, #403a02);
+    text-align: center;
     margin: 0;
     padding: 0;
-  font-family: "IBM Plex Sans", sans-serif;
-  overflow: hidden;
+    font-family: "IBM Plex Sans", sans-serif;
+    overflow: hidden;
+  
+}
+
+.app-wrapper {
+    background: url('/src/assets/background/bg3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+}
+
+@media (max-width: 1000px) {
+    .app-wrapper {
+        background: url('/src/assets/background/bgSmall.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        
+    }
 }
 
