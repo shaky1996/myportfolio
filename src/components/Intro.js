@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './components.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,7 +24,7 @@ const Intro = () => {
     }, []);
 
     return (
-        <Container style={{ marginTop: '10%', marginBottom: '100px', paddingBottom: '100px' }}>
+        <Container className='reveal-container' style={{ marginTop: '10%', marginBottom: '100px', paddingBottom: '100px' }}>
             <Row className='mt-3 py-5 text-light'>
                 <Col xs={6} className='text-start'>
                     <h3>

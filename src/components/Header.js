@@ -12,9 +12,10 @@ const Header = () => {
     as="nav"
     collapseOnSelect
     expand='lg'
-    className='bg-transparent '
+    className='bg-transparent'
+    
     data-bs-theme='dark'
-    data-bs-spy="scroll"
+    
     
 
 >

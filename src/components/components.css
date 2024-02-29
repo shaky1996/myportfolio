@@ -1,0 +1,16 @@
+.reveal-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealAnimation 2.5s ease forwards;
+}
+
+@keyframes revealAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

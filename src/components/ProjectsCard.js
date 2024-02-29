@@ -17,7 +17,7 @@ const ProjectsCard = () => {
                 <Tab.Container defaultActiveKey='#link1'>
                     <Col>
                         <Row>
-                            <Col sm={4}>
+                            <Col md={4}>
                                 <ListGroup data-bs-theme='light'>
                                     {itemData.map((item, idx) => (
                                         <ListGroup.Item
@@ -49,7 +49,7 @@ const ProjectsCard = () => {
 
                     {/* Right side menu */}
 
-                    <Col sm={8}>
+                    <Col md={8}>
                         <Container>
                             <Tab.Content>
                                 {itemData.map((item, idx) => (
