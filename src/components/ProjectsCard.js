@@ -107,9 +107,9 @@ const ProjectsCard = () => {
                                                 </Col>
                                                 <Col className='mt-4 text-start'>
                                                     <Button
-                                                        href='#'
+                                                        href={item.demo}
                                                         variant='warning'
-                                                        
+                                                        target='_blank'
                                                     >
                                                         <Icon
                                                             name='display'
@@ -120,7 +120,8 @@ const ProjectsCard = () => {
                                                         Live Demo
                                                     </Button>
                                                     <Button
-                                                        href='#'
+                                                        href={item.github}
+                                                        target='_blank'
                                                         variant='outline-light'
                                                         className='mx-1'
                                                     >
@@ -148,22 +149,31 @@ const ProjectsCard = () => {
 
 const itemData = [
     {
+        img: require('../assets/projectsImg/Barca_background.jpg'),
+        title: 'Barca',
+        description:
+            'This one-page responsive HTML website serves as a demonstration of my expertise in web fundamentals through the utilization of HTML, CSS, JavaScript and fetching data from an API.',
+        techStack: ['HTML', 'CSS', 'JavaScript', 'API'],
+        demo: 'https://shakbarcelona2024.web.app/',
+        github: 'https://github.com/shaky1996/portfolio_barcelona'
+    },
+    {
+        img: require('../assets/projectsImg/bgSmall.png'),
+        title: 'Portfolio',
+        description:
+            'This portfolio website you are currently on :D\n Fully reponsive built with React and react-bootstrap',
+        techStack: ['React', 'JavaScript', 'Bootstrap'],
+        demo: '#',
+        github: '#'
+    },
+    {
         img: require('../assets/projectsImg/ufit.jpg'),
         title: 'uFit',
         description:
-            'React Native fitness app — lets users find instructions for different workouts with an easy-to-use interface. \nUsers can track workouts using built-in templates and track weight loss progress.',
-        techStack: ['React Native'],
-        demo: 'link1',
-        github: 'link2'
-    },
-    {
-        img: require('../assets/projectsImg/lambo.jpg'),
-        title: 'Lambo',
-        description:
-            'React Native fitness app — lets users find instructions for different workouts with an easy-to-use interface. \nUsers can track workouts using built-in templates and track weight loss progress. Asdasdasdasdasd asdasd asdasd asdasd asd',
-        techStack: ['HTML', 'CSS', 'JavaScript'],
-        demo: 'link1',
-        github: 'link2'
+            '*Still under developement\n\nReact Native fitness app — lets users find instructions for different workouts with an easy-to-use interface. \nUsers can track workouts using built-in templates and track weight loss progress.',
+        techStack: ['React Native', 'Expo'],
+        demo: 'https://snack.expo.dev/@yuldashev1996/ufit---portfolio-project-?platform=ios',
+        github: 'https://github.com/shaky1996/uFit'
     }
 ];
 

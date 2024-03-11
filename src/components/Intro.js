@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './components.css'
+import './components.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Icon from '@reacticons/bootstrap-icons';
 import Blob from '../features/blob/Blob';
 import BgImg from '../features/bgimg/BgImg';
+import Resume from '../assets/resume/Shakhzod_Yuldashev_Resume.pdf'
 
 const Intro = () => {
     const [isXsScreen, setIsXsScreen] = useState(window.innerWidth < 768);
@@ -24,11 +25,21 @@ const Intro = () => {
     }, []);
 
     return (
-        <Container className='reveal-container' style={{ marginTop: '10%', marginBottom: '100px', paddingBottom: '100px' }}>
+        <Container
+            className='reveal-container'
+            style={{
+                marginTop: '10%',
+                marginBottom: '100px',
+                paddingBottom: '100px'
+            }}
+        >
             <Row className='mt-3 py-5 text-light'>
                 <Col xs={6} className='text-start'>
                     <h3>
-                        <small className='text-body-success' style={{ fontWeight: 300 }}>
+                        <small
+                            className='text-body-success'
+                            style={{ fontWeight: 300 }}
+                        >
                             Hello,
                         </small>
                     </h3>
@@ -38,30 +49,46 @@ const Intro = () => {
                             Shakhzod
                         </span>
                     </h1>
-                    <h2 className='pt-3 text-break fs-4' style={{ fontWeight: 300 }}>
+                    <h2
+                        className='pt-3 text-break fs-4'
+                        style={{ fontWeight: 300 }}
+                    >
                         {' '}
                         I build websites and apps
                     </h2>
-                    <Button variant='outline-info' className='mt-3'>
-                        <Icon name='file-earmark-person-fill' style={{ paddingRight: 5 }} />
-                        My Resume
-                    </Button>
-                    <Col style={{ fontSize: '2em'}}>
                     <a
-                        href='https://www.linkedin.com/in/shak-yuldashev/'
+                        href={Resume}
                         target='_blank'
                         rel='noopener noreferrer'
                     >
-                        <Icon name='linkedin' className='px-2'/>
+                        <Button variant='outline-info' className='mt-3'>
+                            <Icon
+                                name='file-earmark-person-fill'
+                                style={{ paddingRight: 5 }}
+                            />
+                            My Resume
+                        </Button>
                     </a>
-                    <a
-                        href='https://github.com/shaky1996'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
-                        <Icon name='github' className='px-2' style={{ color: 'white'}}/>
-                    </a>
-                </Col>
+                    <Col style={{ fontSize: '2em' }}>
+                        <a
+                            href='https://www.linkedin.com/in/shak-yuldashev/'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <Icon name='linkedin' className='px-2' />
+                        </a>
+                        <a
+                            href='https://github.com/shaky1996'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            <Icon
+                                name='github'
+                                className='px-2'
+                                style={{ color: 'white' }}
+                            />
+                        </a>
+                    </Col>
                 </Col>
                 {!isXsScreen && (
                     <Col className='align-items-start pt-4'>
